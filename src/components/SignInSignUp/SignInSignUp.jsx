@@ -16,22 +16,22 @@ export const SignInSignUp = () => {
 
         <div className="inputs">
             <div className="input">
-                <div className="user-icon"><Person /></div>
-                <input type="text" />
+                <div className="user-icon icon"><Person /></div>
+                <input type="text" placeholder='Name'/>
             </div>
 
             <div className="input">
-                <div className="email-icon"><Email /></div>
-                <input type="email" />
+                <div className="email-icon icon"><Email /></div>
+                <input type="email" placeholder='Email'/>
             </div>
 
             <div className="input">
-                <div className="password-icon"><Lock /></div>
-                <input type="password" />
+                <div className="password-icon icon"><Lock /></div>
+                <input type="password" placeholder='Password'/>
             </div>
 
             <div className="forgot-password">
-                <p>Lost Password?/ <span>Click here1</span></p>
+                <p>Lost Password?/ <span>Click here</span></p>
             </div>
 
             <div className="submit-container">
