@@ -10,8 +10,8 @@ export const SignInSignUp = () => {
   return (
     <div className='container'>
         <div className="header">
-            <div className="text">Sign Up</div>
-            <div className="underline"></div>
+            <div className="header-title">Sign Up</div>
+            <div className="header-title-underline"></div>
         </div>
 
         <div className="inputs">
@@ -28,6 +28,19 @@ export const SignInSignUp = () => {
             <div className="input">
                 <div className="password-icon"><Lock /></div>
                 <input type="password" />
+            </div>
+
+            <div className="forgot-password">
+                <p>Lost Password?/ <span>Click here1</span></p>
+            </div>
+
+            <div className="submit-container">
+                <div className="submit">
+                    <p>Sign Up</p>
+                </div>
+                <div className="submit">
+                    <p>Login</p>
+                </div>
             </div>
         </div>
 
