@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './SignInSignUp.css'
 
 import Email from '@mui/icons-material/Email';
@@ -7,10 +7,13 @@ import Lock from '@mui/icons-material/Lock';
 
 
 export const SignInSignUp = () => {
+
+    const [action, setAction] = useState("Sign Up");
+
   return (
     <div className='container'>
         <div className="header">
-            <div className="header-title">Sign Up</div>
+            <div className="header-title">{action}</div>
             <div className="header-title-underline"></div>
         </div>
 
@@ -35,10 +38,10 @@ export const SignInSignUp = () => {
             </div>
 
             <div className="submit-container">
-                <div className="submit">
+                <div className={action==="Login"?"submit gray":"submit"}>
                     <p>Sign Up</p>
                 </div>
-                <div className="submit">
+                <div className={action==="Sign Up"?"submit gray":"submit"}>
                     <p>Login</p>
                 </div>
             </div>
