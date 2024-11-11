@@ -19,10 +19,13 @@ export const SignInSignUp = () => {
         </div>
 
         <div className="inputs">
-            <div className="input">
-                <div className="user-icon icon"><Person /></div>
-                <input type="text" placeholder='Name'/>
-            </div>
+
+            {action==="Login"?<div></div>:
+                        <div className="input">
+                        <div className="user-icon icon"><Person /></div>
+                        <input type="text" placeholder='Name'/>
+                    </div>
+            }
 
             <div className="input">
                 <div className="email-icon icon"><Email /></div>
@@ -34,9 +37,11 @@ export const SignInSignUp = () => {
                 <input type="password" placeholder='Password'/>
             </div>
 
-            <div className="forgot-password">
-                <p>Lost Password?/ <span>Click here</span></p>
-            </div>
+            {
+                action === "Sign Up" ? <div></div>: 
+                <div className="forgot-password">
+                <p>Lost Password?/ <span>Click here</span></p></div>
+            }
 
             <div className="submit-container">
                 <div className={action==="Login"?"submit gray":"submit"} onClick={() => {setAction("Sign Up")}}>
