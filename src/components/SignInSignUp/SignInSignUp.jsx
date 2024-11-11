@@ -8,6 +8,7 @@ import Lock from '@mui/icons-material/Lock';
 
 export const SignInSignUp = () => {
 
+
     const [action, setAction] = useState("Sign Up");
 
   return (
@@ -38,10 +39,10 @@ export const SignInSignUp = () => {
             </div>
 
             <div className="submit-container">
-                <div className={action==="Login"?"submit gray":"submit"}>
+                <div className={action==="Login"?"submit gray":"submit"} onClick={() => {setAction("Sign Up")}}>
                     <p>Sign Up</p>
                 </div>
-                <div className={action==="Sign Up"?"submit gray":"submit"}>
+                <div className={action==="Sign Up"?"submit gray":"submit"} onClick={() => {setAction("Login")}}>
                     <p>Login</p>
                 </div>
             </div>
