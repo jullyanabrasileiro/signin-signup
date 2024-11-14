@@ -14,7 +14,7 @@ body{
 }
 
 .container {
-    width: 150%;
+    width: 50vw;
     height: 85vh;
     display: flex;
 }
@@ -51,7 +51,6 @@ body{
     align-items: center;
     gap: 8px;
     width: 100%;
-    margin-top: 20px;
 }
 
 .header-title {
@@ -79,6 +78,7 @@ body{
     align-items: center;
     margin: auto;
     height: 60px;
+    width: 320px;
     background: #eaeaea;
     border-radius: 6px;
 }
@@ -109,7 +109,6 @@ body{
 
 .submit-container {
     display: flex;
-    flex-direction: column;
     gap: 15px;
     margin: 0px auto;
 }
