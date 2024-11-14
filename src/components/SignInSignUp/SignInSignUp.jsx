@@ -38,12 +38,6 @@ export const SignInSignUp = () => {
                         <input type="password" placeholder='Password'/>
                     </div>
 
-                    {
-                        action === "Sign Up" ? <div></div>:
-                        <div className="forgot-password">
-                        <p>Lost Password?/ <span>Click here</span></p></div>
-                    }
-
                     <div className="submit-container">
                         <div className={action==="Login"?"submit gray":"submit"} onClick={() => {setAction("Sign Up")}}>
                             <p>Sign Up</p>
@@ -52,6 +46,12 @@ export const SignInSignUp = () => {
                             <p>Login</p>
                         </div>
                     </div>
+
+                    {
+                        action === "Sign Up" ? <div></div>:
+                        <div className="forgot-password">
+                        <p>Forgot password?/ <span>Click here</span></p></div>
+                    }
 
                     <div className="signin-especials">
                         <SignInwithGoogle />
