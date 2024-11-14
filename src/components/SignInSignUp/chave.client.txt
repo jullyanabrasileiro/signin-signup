@@ -1,0 +1,5 @@
+ID do cliente
+1018193881544-p015rh4u9rilisu0n3s7p6guvllln7fl.apps.googleusercontent.com
+
+Chave secreta do cliente
+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
