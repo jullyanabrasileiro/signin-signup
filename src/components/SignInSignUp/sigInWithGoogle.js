@@ -7,9 +7,12 @@ function SignInwithGoogle () {
 
     function googleLogin() {
         const provider = new GoogleAuthProvider();
+
         signInWithPopup(auth,provider).then(async(result) => {
             console.log(result);
-        })
+        }).catch((error) => {
+            console.error("Error during Google sign-in:", error.message);
+        });
     }
     return (
         <div>

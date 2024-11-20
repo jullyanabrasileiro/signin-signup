@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './SignInSignUp.css';
 
-import { auth, provider, signInWithPopup } from './firebase'; 
-
 import Email from '@mui/icons-material/Email';
 import Person from '@mui/icons-material/Person';
 import Lock from '@mui/icons-material/Lock';
