@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-.form{
+.form {
     width: 65%;
     display: flex;
     justify-content: center;
@@ -129,4 +129,52 @@
 .gray {
     background: #eaeaea;
     color: #676767;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        height: 100vh;
+ 
+    }
+
+    .form-image {
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .form {
+        width: 100%; 
+        max-width: 600px;
+        padding: 2rem; 
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .inputs {
+        gap: 10px; 
+    }
+
+    .input {
+        width: 90%; 
+    }
+
+    .submit-container {
+        flex-direction: column; 
+        gap: 2px; 
+        margin-top: 20px;
+    }
+
+    .submit {
+        margin-bottom: 10px; 
+    }
+
+    .forgot-password {
+        padding-left: 0;
+        text-align: center;
+    }
 }
